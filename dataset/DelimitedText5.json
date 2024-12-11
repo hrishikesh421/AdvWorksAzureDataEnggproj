@@ -1,0 +1,33 @@
+{
+	"name": "DelimitedText5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "httpLS",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"p_rel_url": {
+					"value": "@dataset().p_rel_url",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"p_rel_url": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

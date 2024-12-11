@@ -1,0 +1,9 @@
+{
+	"name": "advworksprojadf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2a04fd3e-f22f-47c4-b338-15556acf94f2",
+		"tenantId": "530c0328-2f02-4b84-8330-93d163f4e40e"
+	}
+}
