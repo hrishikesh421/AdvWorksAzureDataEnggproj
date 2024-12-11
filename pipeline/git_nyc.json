@@ -75,14 +75,12 @@
 									}
 								},
 								"sink": {
-									"type": "DelimitedTextSink",
+									"type": "ParquetSink",
 									"storeSettings": {
 										"type": "AzureBlobFSWriteSettings"
 									},
 									"formatSettings": {
-										"type": "DelimitedTextWriteSettings",
-										"quoteAllText": true,
-										"fileExtension": ".txt"
+										"type": "ParquetWriteSettings"
 									}
 								},
 								"enableStaging": false,
@@ -109,18 +107,8 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "DelimitedText7",
-									"type": "DatasetReference",
-									"parameters": {
-										"p_file_name": {
-											"value": "@item().p_file_name",
-											"type": "Expression"
-										},
-										"p_folder_name": {
-											"value": "@item().p_folder_name",
-											"type": "Expression"
-										}
-									}
+									"referenceName": "Parquet1",
+									"type": "DatasetReference"
 								}
 							]
 						}
