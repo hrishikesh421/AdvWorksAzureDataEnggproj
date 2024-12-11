@@ -10,8 +10,9 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "git.json",
-				"fileSystem": "parameters"
+				"fileName": "nycgit.json",
+				"folderPath": "parameters",
+				"fileSystem": "nyctaxi"
 			}
 		},
 		"schema": {
