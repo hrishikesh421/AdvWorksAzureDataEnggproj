@@ -2,7 +2,7 @@
 	"name": "Json2",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage2",
+			"referenceName": "AzureDataLakeStorage5",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,9 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "nycgit.json",
-				"folderPath": "parameters",
-				"fileSystem": "nyctaxi"
+				"fileName": "git.json",
+				"fileSystem": "parameters"
 			}
 		},
 		"schema": {
