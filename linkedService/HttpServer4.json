@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://github.com/hrishikesh421/",
+			"url": "https://raw.githubusercontent.com/hrishikesh421/",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
