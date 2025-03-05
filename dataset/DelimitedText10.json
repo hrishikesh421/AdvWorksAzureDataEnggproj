@@ -1,0 +1,105 @@
+{
+	"name": "DelimitedText10",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adls_1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"file_name": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Netflix_Cast",
+				"fileSystem": "bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "first_name",
+				"type": "String"
+			},
+			{
+				"name": "second_name",
+				"type": "String"
+			},
+			{
+				"name": "goals_scored",
+				"type": "String"
+			},
+			{
+				"name": "assists",
+				"type": "String"
+			},
+			{
+				"name": "total_points",
+				"type": "String"
+			},
+			{
+				"name": "minutes",
+				"type": "String"
+			},
+			{
+				"name": "goals_conceded",
+				"type": "String"
+			},
+			{
+				"name": "creativity",
+				"type": "String"
+			},
+			{
+				"name": "influence",
+				"type": "String"
+			},
+			{
+				"name": "threat",
+				"type": "String"
+			},
+			{
+				"name": "bonus",
+				"type": "String"
+			},
+			{
+				"name": "bps",
+				"type": "String"
+			},
+			{
+				"name": "ict_index",
+				"type": "String"
+			},
+			{
+				"name": "clean_sheets",
+				"type": "String"
+			},
+			{
+				"name": "red_cards",
+				"type": "String"
+			},
+			{
+				"name": "yellow_cards",
+				"type": "String"
+			},
+			{
+				"name": "selected_by_percent",
+				"type": "String"
+			},
+			{
+				"name": "now_cost",
+				"type": "String"
+			},
+			{
+				"name": "element_type",
+				"type": "String"
+			}
+		]
+	}
+}
